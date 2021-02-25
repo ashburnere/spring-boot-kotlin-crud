@@ -984,7 +984,13 @@ class HtmlController(private val repository: ArticleRepository,
 	// ...
 ----
 
+To build and run the app use use (for Gradle) ```./gradlew bootRun```
+or (for Maven) ```./mvnw spring-boot:run```
+
+
 Restart the web application, refresh `http://localhost:8080/`, you should see the banner on the blog homepage.
+Swagger-UI is visible at `http://localhost:8080/swagger-ui-custom.html` and H2-Console at `http://localhost:8080/h2-console`.
+
 
 == Conclusion
 
