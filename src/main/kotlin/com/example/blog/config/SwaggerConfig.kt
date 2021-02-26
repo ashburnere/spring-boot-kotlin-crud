@@ -1,4 +1,4 @@
-package com.example.blog
+package com.example.blog.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -19,7 +19,7 @@ class SwaggerConfig {
         return Docket(DocumentationType.SWAGGER_2)
             .apiInfo(getApiInfo())
             .select()
-            .apis(RequestHandlerSelectors.basePackage("com.example.blog.control"))
+            .apis(RequestHandlerSelectors.basePackage("com.example.blog.controller"))
             .paths(PathSelectors.any())
             .build()
     }

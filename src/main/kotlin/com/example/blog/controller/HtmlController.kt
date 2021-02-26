@@ -1,6 +1,11 @@
-package com.example.blog.control
+package com.example.blog.controller
 
 import com.example.blog.*
+import com.example.blog.config.BlogProperties
+import com.example.blog.entity.Article
+import com.example.blog.entity.User
+import com.example.blog.repository.ArticleRepository
+import com.example.blog.util.format
 import org.springframework.http.HttpStatus.*
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
